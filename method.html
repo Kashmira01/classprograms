@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ans"></div>
+    <div id="ans1"></div>
+    <script>
+        class Demo{
+            constructor(name,id)
+            {
+                this.demo1=name;
+                this.demo2=id;
+
+            }
+            myMethod(){
+                return "Hello this is method in class"
+            }
+        }
+        demo=new Demo("Felix","IT")
+        samp=new Demo();
+        document.getElementById('ans').innerHTML=demo.demo1+" "+
+        demo.demo2;
+        document.getElementById('ans1').innerHTML=samp.myMethod()
+    </script>
+</body>
+</html>
